@@ -1,0 +1,325 @@
+<html><head><base href="\"></head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Japan Travel HK - Your Gateway to Japan</title>
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+        background-color: #f0f0f0;
+    }
+    .container {
+        max-width: 1800px;
+        margin: 0 auto;
+        padding: 0 20px;
+        height:fit-content;
+    }
+    header {
+        background-color: #83ecd6;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 2;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+    }
+    .logo img {
+        width: 200px;
+        align-items:left;
+        }
+    .logo{display:left; width:100px;
+        }
+    
+    .nav-links {
+        display: flex;
+        gap: 20px;
+    }
+    .nav-links a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 1000;
+        transition: color 0.3s ease;
+        font-size: 1.4rem;
+        padding: 10px 15px;
+    }
+    .nav-links a:hover {
+        color: #cf856a;
+    }
+    .hero {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+    }
+    .hero video {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: 1;
+    }
+    .hero-content {
+        text-align: center;
+        color: #2cc478;
+        z-index: 1;
+    }
+    .hero-content h1 {
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+    .hero-content p {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    }
+    .cta-button {
+        display: inline-block;
+        background-color: #00c3ff;
+        color: #fff;
+        padding: 12px 30px;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+    .cta-button:hover {
+        background-color: #ff6347;
+    }
+    .section {
+        padding: 80px 0;
+    }
+    .section h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+        color: #333;
+    }
+    .city-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+    }
+    .city-card {
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+    }
+    .city-card:hover {
+        transform: translateY(-5px);
+    }
+    .city-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    .city-card-content {
+        padding: 20px;
+    }
+    .city-card h3 {
+        margin-top: 0;
+        font-size: 1.5rem;
+        color: #333;
+    }
+    .city-card p {
+        color: #666;
+        margin-bottom: 15px;
+    }
+    .city-card a {
+        display: inline-block;
+        background-color: #ff4500;
+        color: #fff;
+        padding: 8px 20px;
+        border-radius: 20px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+    .city-card a:hover {
+        background-color: #ff6347;
+    }
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 40px 0;
+    }
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .footer-section {
+        flex: 1;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+    .footer-section h3 {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+    .footer-section ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    .footer-section ul li {
+        margin-bottom: 10px;
+    }
+    .footer-section ul li a {
+        color: #ccc;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    .footer-section ul li a:hover {
+        color: #fff;
+    }
+    .social-icons {
+        display: flex;
+        gap: 15px;
+    }
+    .social-icons a {
+        color: #fff;
+        font-size: 1.5rem;
+        transition: color 0.3s ease;
+    }
+    .social-icons a:hover {
+        color: #ff4500;
+    }
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <img src="/Logo/Go Travel-R01.png" alt="Japan Travel HK Logo">
+            </div>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/destinations">Destinations</a>
+                <a href="/about">About Us</a>
+                <a href="/contact">Contact</a>
+                <a href="/book">Book Now</a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <video autoplay loop muted>
+            <source src="Video/Japan travel-R01.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+            <h1>Discover the Beauty of Japan</h1>
+            <p>Experience the rich culture, stunning landscapes, and unforgettable adventures</p>
+            <a href="/book" class="cta-button">Plan Your Trip</a>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>Popular Destinations</h2>
+            <div class="city-grid">
+                <div class="city-card">
+                    <img src="https://japantravelhk.com/assets/images/tokyo.jpg" alt="Tokyo skyline at night with Mount Fuji in the background" width="300" height="200">
+                    <div class="city-card-content">
+                        <h3>Tokyo</h3>
+                        <p>Experience the perfect blend of tradition and modernity in Japan's bustling capital.</p>
+                        <a href="/destinations/tokyo">Explore Tokyo</a>
+                    </div>
+                </div>
+                <div class="city-card">
+                    <img src="https://japantravelhk.com/assets/images/kyoto.jpg" alt="Traditional Japanese temple in Kyoto surrounded by cherry blossoms" width="300" height="200">
+                    <div class="city-card-content">
+                        <h3>Kyoto</h3>
+                        <p>Immerse yourself in the rich history and cultural heritage of Japan's ancient capital.</p>
+                        <a href="/destinations/kyoto">Discover Kyoto</a>
+                    </div>
+                </div>
+                <div class="city-card">
+                    <img src="https://japantravelhk.com/assets/images/osaka.jpg" alt="Vibrant street scene in Osaka with neon signs and street food stalls" width="300" height="200">
+                    <div class="city-card-content">
+                        <h3>Osaka</h3>
+                        <p>Indulge in delicious street food and experience the vibrant nightlife of Japan's kitchen.</p>
+                        <a href="/destinations/osaka">Visit Osaka</a>
+                    </div>
+                </div>
+                <div class="city-card">
+                    <img src="https://japantravelhk.com/assets/images/hokkaido.jpg" alt="Scenic view of snow-capped mountains and a hot spring in Hokkaido" width="300" height="200">
+                    <div class="city-card-content">
+                        <h3>Hokkaido</h3>
+                        <p>Explore the natural beauty of Japan's northernmost island, from hot springs to ski resorts.</p>
+                        <a href="/destinations/hokkaido">Explore Hokkaido</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/destinations">Destinations</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/book">Book Now</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="/privacy">Privacy Policy</a></li>
+                    <li><a href="/terms">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="https://facebook.com/japantravelhk"><i class="fab fa-facebook"></i></a>
+                    <a href="https://instagram.com/japantravelhk"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/japantravelhk"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Add any necessary JavaScript here
+    document.addEventListener('DOMContentLoaded', function() {
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    });
+</script>
+</body>
+</html>
+Key Points to Note:

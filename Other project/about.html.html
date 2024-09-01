@@ -1,0 +1,170 @@
+<html><head><base href="/about">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us - Travel Japan</title>
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.6;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+        padding: 20px;
+    }
+    header {
+        background: #e74c3c;
+        color: white;
+        padding-top: 30px;
+        min-height: 70px;
+        border-bottom: #e8491d 3px solid;
+    }
+    header a {
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+    header ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        overflow: hidden;
+    }
+    header li {
+        float: left;
+        display: inline;
+        padding: 0 20px 0 20px;
+    }
+    header #branding {
+        float: left;
+    }
+    header #branding h1 {
+        margin: 0;
+    }
+    header nav {
+        float: right;
+        margin-top: 10px;
+    }
+    header .highlight, header .current a {
+        color: #e8491d;
+        font-weight: bold;
+    }
+    header a:hover {
+        color: #ffffff;
+        font-weight: bold;
+    }
+    #about-showcase {
+        min-height: 300px;
+        background: url('https://source.unsplash.com/1600x900/?japan,travel') no-repeat center center/cover;
+        text-align: center;
+        color: #ffffff;
+    }
+    #about-showcase h1 {
+        margin-top: 100px;
+        font-size: 55px;
+        margin-bottom: 10px;
+    }
+    .about-content {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+    .about-section {
+        flex: 1;
+        margin: 0 15px;
+        background: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    footer {
+        padding: 20px;
+        margin-top: 20px;
+        color: #ffffff;
+        background-color: #e8491d;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Travel</span> Japan</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li class="current"><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/book">Book Now</a></li>
+                    <li><a href="/privacy">Privacy Policy</a></li>
+                    <li><a href="/terms">Terms & Conditions</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about-showcase">
+        <div class="container">
+            <h1>About Travel Japan</h1>
+        </div>
+    </section>
+
+    <div class="container">
+        <h2>Our Story</h2>
+        <p>Travel Japan was founded in 2010 by a group of passionate travelers who fell in love with the unique charm and beauty of Japan. Our mission is to share this love with the world by offering unparalleled travel experiences that showcase the best of what Japan has to offer.</p>
+        
+        <div class="about-content">
+            <div class="about-section">
+                <h3>Our Vision</h3>
+                <p>To be the bridge that connects travelers with the heart and soul of Japan, creating unforgettable memories and fostering cultural understanding.</p>
+            </div>
+            <div class="about-section">
+                <h3>Our Values</h3>
+                <ul>
+                    <li>Authenticity in every experience</li>
+                    <li>Respect for local cultures and traditions</li>
+                    <li>Commitment to sustainable tourism</li>
+                    <li>Excellence in customer service</li>
+                    <li>Continuous learning and improvement</li>
+                </ul>
+            </div>
+            <div class="about-section">
+                <h3>What Sets Us Apart</h3>
+                <p>Our team consists of Japan experts who have lived, worked, or studied in various regions of the country. This first-hand knowledge allows us to craft unique itineraries that go beyond the typical tourist routes, offering you a deeper, more authentic Japanese experience.</p>
+            </div>
+        </div>
+
+        <h3>Our Team</h3>
+        <p>Travel Japan is powered by a diverse team of travel enthusiasts, Japan specialists, and customer service experts. From our local guides in Japan to our support staff around the world, everyone at Travel Japan is committed to ensuring you have the trip of a lifetime.</p>
+
+        <h3>Sustainable Tourism</h3>
+        <p>We believe in responsible travel that benefits both our customers and the local communities we visit. We partner with local businesses, promote traditional crafts, and contribute to conservation efforts to ensure that the Japan we love remains beautiful and vibrant for generations to come.</p>
+
+        <h3>Join Us on a Journey</h3>
+        <p>Whether you're dreaming of seeing cherry blossoms in spring, experiencing the vibrant festivals of summer, admiring the colorful foliage in autumn, or enjoying the serene snow-covered landscapes in winter, Travel Japan is here to make your Japanese adventure a reality. Let us show you the Japan we know and love.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Travel Japan. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const navItems = document.querySelectorAll('header nav ul li');
+            navItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    navItems.forEach(i => i.classList.remove('current'));
+                    this.classList.add('current');
+                });
+            });
+        });
+    </script>
+</body></html>
